@@ -1,8 +1,21 @@
+import { createGlobalStyle } from "styled-components";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Link from "./components/Link";
+
+const GlobalStyle = createGlobalStyle`
+  margin: 0;
+  padding: 0;
+`;
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Header />
+      <Home />
+      <Link />
+    </>
   );
 }
 
