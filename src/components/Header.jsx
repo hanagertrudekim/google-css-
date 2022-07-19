@@ -2,11 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const HeaderWrap = styled.div`
-  display: grid;
-  grid-template-columns: 17fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
   height: 47px;
   place-items: center;
   padding: 8px;
+  position: fixed;
+  top: 0;
+  right: 0;
 `;
 
 const HeaderMenu = styled.a`
